@@ -20,7 +20,7 @@ public class ApiController {
 
     @GetMapping("/")
     public String index() {
-        return "index";
+        return "Hola, mundo";
     }
 
     @PostMapping("/addPersona")
@@ -28,7 +28,7 @@ public class ApiController {
         return personaService.addPersona(persona);
     }
 
-    @GetMapping("/personas")
+    @GetMapping("/getPersonas")
     public List<Persona> getPersonas() {
         return personaService.getAllPersona();
     }
